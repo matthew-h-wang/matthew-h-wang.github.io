@@ -1,0 +1,57 @@
+html {
+    background-color: black;
+    color: white;
+    font-family: 'Space Mono', monospace;
+    font-weight: 400;
+
+}
+
+h1 {
+    font-size:72px;
+    /* font-weight: 700; */
+}
+
+nav {
+    background-color: black;
+}
+
+nav li:hover {
+    background-color: white;
+    color: black;
+}
+
+nav li a {
+    color: inherit;
+}
+
+ul.dropdown-content {
+    background-color: black;
+}
+
+ul.dropdown-content li a {
+    color: white;
+}
+
+p#about span{
+    border: 1px dashed rgba(255, 255, 255, 0.5);
+}
+
+div.card {
+    background-color: black;
+}
+
+div.card>div.card-image{
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+div.card>div.card-content,div.card>div.card-action{
+    background-color: rgb(29, 29, 29);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+div.card span.card-title {
+    text-decoration: underline;    
+}

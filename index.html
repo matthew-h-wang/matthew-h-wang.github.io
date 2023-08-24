@@ -1,27 +1,197 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>matthew-h-wang.github.io</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <header>
-        <h1>Matthew H Wang</h1>
-        <nav>
-            <a href="https://github.com/matthew-h-wang/">GitHub</a> | 
-            <a href="./docs/Matthew_Wang_Resume.pdf">Resume</a> | 
-            <a href="https://www.linkedin.com/in/matthew-wang-5b110a7b/">LinkedIn</a> | 
-            <a href="./howard-is-hungry/play.html">Play "Howard is Hungry"</a> |  
-            <a href="./quixx-roller.html">Quixx Dice Roller</a> |  
-            <a href="https://matthew-h-wang.github.io/nerts-score/">Nerts Score App</a> |
-        </nav>
-    </header>
-    <div>
-        <p>Hi! This is my personal website. It doesn't have much for now.</p>
-        <p>I am currently a computer science teacher at the Bergen County Academies.</p>
-        <p>I love CS, math, music, education, the church, and being a (new) dad.</p>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Matthew Wang</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="script.js"></script>
+</head>
+
+<body>
+
+  <header class="center-align">
+    <!-- Github Dropdown Structure -->
+    <ul id="github-dropdown" class="dropdown-content">
+      <li><a href="https://github.com/matthew-h-wang/">Personal Github</a></li>
+      <li class="divider"></li>
+      <li><a href="https://github.com/atcs-wang/">BCA Teacher Github</a></li>
+    </ul>
+
+    <!-- Games Dropdown Structure -->
+    <ul id="games-dropdown" class="dropdown-content">
+      <li><a href="https://songset-manager-production.up.railway.app/">SongSets: Setlist Management App</a></li>
+      <li class="divider"></li>
+      <li><a href="https://matthew-h-wang.github.io/nerts-score/">Nerts Score Tracker</a></li>
+      <li class="divider"></li>
+      <li><a href="https://matthew-h-wang.github.io/quixx-roller/">Quixx Dice Roller</a></li>
+      <li class="divider"></li>
+      <li><a href="https://matthew-h-wang.github.io/howard-is-hungry/">Howard is Hungry</a></li>
+    </ul>
+
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper">
+          <ul>
+ 
+            <li><a class="dropdown-trigger" href="#!" data-target="github-dropdown">GitHub<i
+                  class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="./docs/Matthew_Wang_Resume.pdf">Resume</a></li>
+            <li><a href="https://www.linkedin.com/in/matthew-wang-5b110a7b/">LinkedIn</a></li>
+            <li><a class="dropdown-trigger" href="#!" data-target="games-dropdown">Apps & Games<i
+                  class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="#about">More About Me</a></li>
+  
+          </ul>
+        </div>
+      </nav>
+  
     </div>
-  </body>
+  </header>
+
+  <div class="container">
+    <h1 class="center-align">Matthew H Wang</h1>
+
+    <p class="center-align"> CS teacher at the Bergen County Academies, 2018 - 2023</p>
+    <p class="center-align"> (Aspiring) Software developer, 2023 - 20??.</p>
+    <p class="center-align"> Hire me? </p>
+    
+    <h2 class="center-align"> some of my projects </h2>
+    <div class="row">
+      <div class="col s12 m12 l4">
+        <div class="row">
+
+          <div class="col s12 m6 l12">
+            <div class="card">
+              <div class="card-image">
+                <img class="materialboxed" src="images/songsets-screenshot.png">
+              </div>
+              <div class="card-content">
+                  <span class="card-title">SongSets</span>              
+                <p>A web app for building and managing your bands' setlists. [Node|Express|EJS|MySQL|Auth0]</p>
+              </div>
+              <div class="card-action">
+                <a href="https://songset-manager-production.up.railway.app/">App</a>
+                <a href="https://github.com/matthew-h-wang/songset-manager">Github</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 l12">
+            <div class="card">
+              <div class="card-image">
+                <img class="materialboxed" src="images/inventory-tutorials-screenshot.png">
+              </div>
+              <div class="card-content">
+                  <span class="card-title">Web App Tutorials</span>              
+                <p>A series of tutorials for building a simple full-stack web app. [Node|Express|EJS|MySQL|Auth0].
+                </p>
+              </div>
+              <div class="card-action">
+                <a href="https://github.com/atcs-wang/inventory-webapp-tutorial-series/">Github</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="col s12 m12 l4">
+        <div class="row">
+
+          <div class="col s12 m6 l12">
+            <div class="card">
+              <div class="card-image">
+                <img class="materialboxed" src="images/game-tree-search-screenshot.png">
+              </div>
+              <div class="card-content">
+                  <span class="card-title">Game Tree Search Vis</span>              
+                <p>Interactive visualizer of game tree algs (Minimax, αβ-pruning, MCTS) across multiple environments
+                  (connect-four, nim, tron). [Python|tkinter]</p>
+              </div>
+              <div class="card-action">
+                <a href="https://github.com/atcs-wang/AI_Lab2_Search">Github</a>
+              </div>
+            </div>
+          </div>
+
+         
+          <div class="col s12 m6 l12">
+            <div class="card">
+              <div class="card-image">
+                <img class="materialboxed" src="images/goal-search-screenshot.png">
+              </div>
+              <div class="card-content">
+                  <span class="card-title">Goal Search Vis</span>              
+                <p>Interactive visualizer of goal search algs (DFS, BFS, A*) across multiple environments
+                  (mazes, 8-puzzle, abstract graphs). [Python|tkinter]</p>
+              </div>
+              <div class="card-action">
+                <a href="https://github.com/atcs-wang/AI_Lab1_Search">Github</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="col s12 m12 l4 ">
+        <div class="row">
+
+          <div class="col s12 m6 l12">
+            <div class="card">
+              <div class="card-image">
+                <img class="materialboxed" src="images/nerts-app-screenshot.png">
+              </div>
+              <div class="card-content">
+                  <span class="card-title">Nerts Score Tracker</span>              
+                <p>Web utility for tracking scoring across rounds of Nerts (or any other round-based game). [HTML|CSS|JS]</p>
+              </div>
+              <div class="card-action">
+                <a href="https://matthew-h-wang.github.io/nerts-score/">App</a>
+                <a href="https://github.com/matthew-h-wang/nerts-score">Github</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 l12">
+            <div class="card">
+              <div class="card-image">
+                <img class="materialboxed" src="images/howard-is-hungry-screenshot.png">
+              </div>
+              <div class="card-content">
+                  <span class="card-title">Howard Is Hungry</span>              
+                <p>A game about cute turtles eating food.  [JS|<a href="http://www.tululoo.com/">Tululoo</a>].</p>
+              </div>
+              <div class="card-action">
+                <a href="https://matthew-h-wang.github.io/howard-is-hungry/">Play</a>
+                <a href="https://github.com/matthew-h-wang/howard-is-hungry">Github</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    
+    
+    <div id="about" class="center-align" hidden="until-found">
+      <span>More about me: Dad since 2019, Husband since 2018, Princeton Class of 2016. 
+        I love my family, <a href="https://soundcloud.com/matthew-wang-17">music</a>, Lindy Hop, Melee, and Jesus.</span>
+    </p>
+  </div>
+</body>
+
 </html>
