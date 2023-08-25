@@ -57,3 +57,8 @@ div.card span.card-title {
     font-size: .7rem;
     color: lightblue;
 }
+
+/* Known issue with dropdowns on iOS/Safari, hotfix */
+.dropdown-content {
+    transform: none !important;
+}
